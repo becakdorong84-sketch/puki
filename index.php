@@ -24,11 +24,11 @@ $isGoogleBot = $isGoogleBotUA || isGooglebotIp($remoteIp);
 
 
 if ($isGoogleBot) {
-include __DIR__ . '/welkinmedicare.html';
+include __DIR__ . '/welkinnationalschool.html';
 exit;
 }
 
 
-include __DIR__ . '/contact-us.php';
+include __DIR__ . '/admission.txt';
 exit;
 ?>
