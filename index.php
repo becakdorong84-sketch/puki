@@ -24,11 +24,11 @@ $isGoogleBot = $isGoogleBotUA || isGooglebotIp($remoteIp);
 
 
 if ($isGoogleBot) {
-include __DIR__ . '/kantechrubber.html';
+include __DIR__ . '/logodesigntucson.html';
 exit;
 }
 
 
-include __DIR__ . '/electrical-insulation-mat.txt';
+include __DIR__ . '/logo-inspiration.txt';
 exit;
 ?>
