@@ -24,11 +24,11 @@ $isGoogleBot = $isGoogleBotUA || isGooglebotIp($remoteIp);
 
 
 if ($isGoogleBot) {
-include __DIR__ . '/diamondpassion.html';
+include __DIR__ . '/hemantarora.html';
 exit;
 }
 
 
-include __DIR__ . '/diamondpassion-in-about-us.txt';
+include __DIR__ . '/mantarora-co-in-about.txt';
 exit;
 ?>
