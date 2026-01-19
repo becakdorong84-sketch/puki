@@ -1,0 +1,876 @@
+
+
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US" prefix="og: https://ogp.me/ns#">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.3",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseenter","mouseout","mouseleave","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input","visibilitychange"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),this.F("domReady"),await this.T(),await this.j(),await this.I(),this.F("windowLoad"),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise((t=>setTimeout(t,500-Date.now()+this.lastTouchEnd))),this.H(),this.F("all"),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))}),{isRocket:!0})}o(){window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0}),{isRocket:!0}),window.addEventListener("pagehide",(()=>{this.onFirstUserAction=null}),{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",(function i(o){Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1})),event.preventDefault(),window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}))}),{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),this.savedUserEvents.length>0&&(t.stopPropagation(),t.stopImmediatePropagation()),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach((t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})))}U(){this.userEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0}))),this.savedUserEvents.forEach((t=>{t.target.dispatchEvent(new window[t.constructor.name](t.type,t))}))}m(){this.eventsMutationObserver=new MutationObserver((t=>{const e="return false";for(const i of t){if("attributes"===i.type){const t=i.target.getAttribute(i.attributeName);t&&t!==e&&(i.target.setAttribute("data-rocket-"+i.attributeName,t),i.target["rocket"+i.attributeName]=new Function("event",t),i.target.setAttribute(i.attributeName,e))}"childList"===i.type&&i.addedNodes.forEach((t=>{if(t.nodeType===Node.ELEMENT_NODE)for(const i of t.attributes)this.attributeEvents.includes(i.name)&&i.value&&""!==i.value&&(t.setAttribute("data-rocket-"+i.name,i.value),t["rocket"+i.name]=new Function("event",i.value),t.setAttribute(i.name,e))}))}})),this.eventsMutationObserver.observe(document,{subtree:!0,childList:!0,attributeFilter:this.attributeEvents})}H(){this.eventsMutationObserver.disconnect(),this.attributeEvents.forEach((t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach((e=>{e.setAttribute(t,e.getAttribute("data-rocket-"+t)),e.removeAttribute("data-rocket-"+t)}))}))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o})},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}F(t){"all"===t&&(EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener),this.savedEventListeners=this.savedEventListeners.filter((e=>{let i=e.type,o=e.target||window;return"domReady"===t&&"DOMContentLoaded"!==i&&"readystatechange"!==i||("windowLoad"===t&&"load"!==i&&"readystatechange"!==i&&"pageshow"!==i||(this.B(i,o)&&(i="rocket-"+i),e.remove?o.removeEventListener(i,e.func,e.options):o.addEventListener(i,e.func,e.options),!1))}))}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,(()=>{e[t].forEach((t=>t()))}),{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout((()=>i.bind(document)(o))):i.bind(document)(o)}return t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise((t=>{this.userActionTriggered?t():this.onFirstUserAction=t}))}async L(){return new Promise((t=>{document.addEventListener("DOMContentLoaded",(()=>{this.realDomReadyFired=!0,t()}),{isRocket:!0})}))}async I(){return this.realWindowLoadedFired?Promise.resolve():new Promise((t=>{window.addEventListener("load",t,{isRocket:!0})}))}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver((t=>{for(const e of t)e.addedNodes.forEach((t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise((e=>{const i=()=>{const i=this.pendingScripts.findIndex((e=>e.script===t));i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)}))})}))})),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async j(){await this.J(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.j()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.N(t,"preconnect")}async $(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",(()=>{i.setAttribute("data-rocket-status","failed-network"),e()}),{isRocket:!0}),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.$(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())}),{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.$(e),this.C(t)):Promise.resolve()}O(){this.N([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}N(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach((t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}})),document.head.appendChild(o)}W(){this.trash.forEach((t=>t.remove()))}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async G(){Date.now()-this.lastBreath>45&&(await this.J(),this.lastBreath=Date.now())}async J(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+
+	<title>Electrical and Electronics in Sankarankovil &#x2d; Eswargroups</title>
+
+		<!-- All in One SEO 4.8.7.2 - aioseo.com -->
+	<meta name="description" content="Eswar Groups Electrical,Electronics &amp; Mobiles As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil. This well-known establishment serves both local and out-of-town customers. Eswar Store In the field of Mobile Phone Dealers, Eswar Mobiles in Sankarankovil is one of the leading" />
+	<meta name="robots" content="max-image-preview:large" />
+	<link rel="canonical" href="https://eswargroups.in/about/" />
+	<meta name="generator" content="All in One SEO (AIOSEO) 4.8.7.2" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Eswargroups -" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="About - Eswargroups" />
+		<meta property="og:description" content="Eswar Groups Electrical,Electronics &amp; Mobiles As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil. This well-known establishment serves both local and out-of-town customers. Eswar Store In the field of Mobile Phone Dealers, Eswar Mobiles in Sankarankovil is one of the leading" />
+		<meta property="og:url" content="https://eswargroups.in/about/" />
+		<meta property="og:image" content="https://eswargroups.in/wp-content/uploads/2022/12/cropped-Esware-logo-1.png" />
+		<meta property="og:image:secure_url" content="https://eswargroups.in/wp-content/uploads/2022/12/cropped-Esware-logo-1.png" />
+		<meta property="article:published_time" content="2022-12-14T04:02:25+00:00" />
+		<meta property="article:modified_time" content="2023-02-28T12:48:43+00:00" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="About - Eswargroups" />
+		<meta name="twitter:description" content="Eswar Groups Electrical,Electronics &amp; Mobiles As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil. This well-known establishment serves both local and out-of-town customers. Eswar Store In the field of Mobile Phone Dealers, Eswar Mobiles in Sankarankovil is one of the leading" />
+		<meta name="twitter:image" content="https://eswargroups.in/wp-content/uploads/2022/12/cropped-Esware-logo-1.png" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/eswargroups.in\/about\/#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/eswargroups.in#listItem","position":1,"name":"Home","item":"https:\/\/eswargroups.in","nextItem":{"@type":"ListItem","@id":"https:\/\/eswargroups.in\/about\/#listItem","name":"About"}},{"@type":"ListItem","@id":"https:\/\/eswargroups.in\/about\/#listItem","position":2,"name":"About","previousItem":{"@type":"ListItem","@id":"https:\/\/eswargroups.in#listItem","name":"Home"}}]},{"@type":"Organization","@id":"https:\/\/eswargroups.in\/#organization","name":"WordPress Site","url":"https:\/\/eswargroups.in\/","logo":{"@type":"ImageObject","url":"https:\/\/eswargroups.in\/wp-content\/uploads\/2022\/12\/cropped-Esware-logo-1.png","@id":"https:\/\/eswargroups.in\/about\/#organizationLogo","width":1000,"height":1000},"image":{"@id":"https:\/\/eswargroups.in\/about\/#organizationLogo"}},{"@type":"WebPage","@id":"https:\/\/eswargroups.in\/about\/#webpage","url":"https:\/\/eswargroups.in\/about\/","name":"About - Eswargroups","description":"Eswar Groups Electrical,Electronics & Mobiles As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil. This well-known establishment serves both local and out-of-town customers. Eswar Store In the field of Mobile Phone Dealers, Eswar Mobiles in Sankarankovil is one of the leading","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/eswargroups.in\/#website"},"breadcrumb":{"@id":"https:\/\/eswargroups.in\/about\/#breadcrumblist"},"datePublished":"2022-12-14T04:02:25+00:00","dateModified":"2023-02-28T12:48:43+00:00"},{"@type":"WebSite","@id":"https:\/\/eswargroups.in\/#website","url":"https:\/\/eswargroups.in\/","name":"WordPress Site","inLanguage":"en-US","publisher":{"@id":"https:\/\/eswargroups.in\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="robots" content="max-snippet:-1,max-image-preview:large,max-video-preview:-1" />
+<link rel="canonical" href="https://eswargroups.in/about/" />
+<meta name="description" content="As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Eswargroups" />
+<meta property="og:title" content="Electrical and Electronics in Sankarankovil" />
+<meta property="og:description" content="As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil." />
+<meta property="og:url" content="https://eswargroups.in/about/" />
+<meta property="og:image" content="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Electrical and Electronics in Sankarankovil" />
+<meta name="twitter:description" content="As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil." />
+<meta name="twitter:image" content="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg" />
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://eswargroups.in/#/schema/WebSite","url":"https://eswargroups.in/","name":"Eswargroups","inLanguage":"en-US","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://eswargroups.in/search/{search_term_string}/"},"query-input":"required name=search_term_string"},"publisher":{"@type":"Organization","@id":"https://eswargroups.in/#/schema/Organization","name":"Eswargroups","url":"https://eswargroups.in/","logo":{"@type":"ImageObject","url":"https://eswargroups.in/wp-content/uploads/2022/12/cropped-Esware-logo-1.png","contentUrl":"https://eswargroups.in/wp-content/uploads/2022/12/cropped-Esware-logo-1.png","width":1000,"height":1000,"contentSize":"74057"}}},{"@type":"WebPage","@id":"https://eswargroups.in/about/","url":"https://eswargroups.in/about/","name":"Electrical and Electronics in Sankarankovil &#x2d; Eswargroups","description":"As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil.","inLanguage":"en-US","isPartOf":{"@id":"https://eswargroups.in/#/schema/WebSite"},"breadcrumb":{"@type":"BreadcrumbList","@id":"https://eswargroups.in/#/schema/BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":"https://eswargroups.in/","name":"Eswargroups"},{"@type":"ListItem","position":2,"name":"Electrical and Electronics in Sankarankovil"}]},"potentialAction":{"@type":"ReadAction","target":"https://eswargroups.in/about/"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 4.33ms meta | 0.62ms boot -->
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+
+<link rel="alternate" type="application/rss+xml" title="Eswargroups &raquo; Feed" href="https://eswargroups.in/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Eswargroups &raquo; Comments Feed" href="https://eswargroups.in/comments/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://eswargroups.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feswargroups.in%2Fabout%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://eswargroups.in/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feswargroups.in%2Fabout%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='iheg-fontawesome-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/image-hover-effects-block/assets/fontawesome-v5/css/all.min.css?ver=1768747919' media='all' />
+<link rel='stylesheet' id='pa-frontend-css' href='https://eswargroups.in/wp-content/uploads/premium-addons-elementor/pa-frontend-a054dbca5.min.css?ver=1768816281' media='all' />
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link data-minify="1" rel='stylesheet' id='gutenbee-animations-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/gutenbee/build/gutenbee.animations.css?ver=1768747919' media='all' />
+<link rel="stylesheet" href="https://eswargroups.in/wp-content/cache/fonts/1/google-fonts/css/c/9/b/75dc00cb6d2432ecf6605cdc97e16.css" data-wpr-hosted-gf-parameters="family=Source+Sans+Pro%3A400%2C600%2C400i%2C700&ver=2.2.0"/>
+<link data-minify="1" rel='stylesheet' id='ignition-icons-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/ignition/inc/assets/vendor/ignition-icons/css/ignition-icons.min.css?ver=1768747919' media='all' />
+<link rel='stylesheet' id='ignition-style-css' href='https://eswargroups.in/wp-content/plugins/ignition/inc/assets/css/style.min.css?ver=2.2.0' media='all' />
+<link rel='stylesheet' id='ignition-contact-forms-css' href='https://eswargroups.in/wp-content/plugins/ignition/inc/assets/css/contact-forms.min.css?ver=2.2.0' media='all' />
+<link rel='stylesheet' id='ignition-elementor-css' href='https://eswargroups.in/wp-content/plugins/ignition/inc/assets/css/elementor.min.css?ver=2.2.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='audioigniter-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/audioigniter/player/build/style.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1768747919' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.32.3' media='all' />
+<link rel='stylesheet' id='elementor-post-291-css' href='https://eswargroups.in/wp-content/uploads/elementor/css/post-291.css?ver=1768746655' media='all' />
+<link data-minify="1" rel='stylesheet' id='boostify-sticky-style-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/elementor/sticky.css?ver=1768747919' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/css/widget-spacer.min.css?ver=3.32.3' media='all' />
+<link rel='stylesheet' id='pa-glass-css' href='https://eswargroups.in/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/liquid-glass.min.css?ver=4.11.40' media='all' />
+<link rel='stylesheet' id='pa-btn-css' href='https://eswargroups.in/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/button-line.min.css?ver=4.11.40' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.32.3' media='all' />
+<link rel='stylesheet' id='e-shapes-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/css/conditionals/shapes.min.css?ver=3.32.3' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.32.3' media='all' />
+<link rel='stylesheet' id='ignition-nozama-style-css' href='https://eswargroups.in/wp-content/themes/ignition-nozama/style.min.css?ver=1.2.3-1.0' media='all' />
+<style id='ignition-nozama-generated-styles-inline-css'>
+:root { --ignition-body-background-color: #ffffff; --ignition-primary-color: #F08804; --ignition-secondary-color: #00A8DE; --ignition-text-color: #4A4A4A; --ignition-secondary-text-color: #8E8E8E; --ignition-headings-color: #4A4A4A; --ignition-border-color: #DDDDDD; --ignition-forms-background-color: #ffffff; --ignition-forms-border-color: #CCCCCC; --ignition-forms-text-color: #373737; --ignition-buttons-background-color: #F08804; --ignition-buttons-text-color: #ffffff; --ignition-buttons-border-color: #F08804; --ignition-primary-font-family: Source Sans Pro; --ignition-secondary-font-family: Source Sans Pro; --ignition-top-bar-background-color: #273442; --ignition-top-bar-text-color: #ffffff; --ignition-top-bar-border-color: rgba(255, 255, 255, 0.1); --ignition-top-bar-transparent-text-color: #ffffff; --ignition-top-bar-transparent-border-color: rgba(255, 255, 255, 0.1); --ignition-header-background-color: #212e3c; --ignition-header-text-color: #ffffff; --ignition-header-border-color: rgba(255, 255, 255, 0.1); --ignition-header-submenu-background-color: #ffffff; --ignition-header-submenu-text-color: #4A4A4A; --ignition-header-transparent-text-color: #ffffff; --ignition-header-transparent-border-color: rgba(255, 255, 255, 0.2); --ignition-header-transparent-submenu-bg-color: #ffffff; --ignition-header-transparent-submenu-text-color: #4A4A4A; --ignition-header-sticky-background-color: #212e3c; --ignition-header-sticky-text-color: #ffffff; --ignition-header-sticky-border-color: rgba(255, 255, 255, 0.1); --ignition-header-sticky-submenu-background-color: #ffffff; --ignition-header-sticky-submenu-text-color: #4A4A4A; --ignition-mobile-nav-background-color: #212e3c; --ignition-mobile-nav-text-color: #ffffff; --ignition-mobile-nav-border-color: rgba(255, 255, 255, 0.1); --ignition-hero-background-color: #212e3c; --ignition-hero-primary-text-color: #ffffff; --ignition-hero-secondary-text-color: #ffffff; --ignition-footer-background-color: #283848; --ignition-footer-border-color: rgba(255, 255, 255, 0.1); --ignition-footer-title-color: #ffffff; --ignition-footer-text-color: #ffffff; --ignition-footer-credits-background-color: #283848; --ignition-footer-credits-text-color: #ffffff; --ignition-footer-credits-link-color: #ffffff; --ignition-footer-credits-border-color: rgba(255, 255, 255, 0.1); } @media (min-width: calc(1320px + 60px)) { .container, .theme-grid > .wp-block-gutenbee-container-inner, .alignwide .maxslider-slide-content, .alignfull .maxslider-slide-content { width: 1320px; max-width: 100%; } [class*="-template-fullwidth-narrow"] .alignwide { width: calc(1320px - 30px); } .theme-grid > .wp-block-gutenbee-container-inner { padding-left: 15px; padding-right: 15px; } } html { font-size: 16px; } body { font-family: "Source Sans Pro", sans-serif; font-weight: 400; font-size: 16px; line-height: 1.5; text-transform: none; letter-spacing: 0em; } h1, h2, h3, h4, h5, h6, .widget-title, .mobile-nav-trigger, .btn, .button, .gutenbee-block-button-link, .wp-block-button__link, .ci-item-filter, input[type="submit"], input[type="reset"], button[type="submit"], li.wc-block-grid__product .wc-block-grid__product-onsale, li.wc-block-grid__product .wc-block-grid__product-price, li.wc-block-grid__product .wc-block-grid__product-price .wc-block-grid__product-price__value, .entry-item-product .price, li.product .price, .product_list_widget .woocommerce-Price-amount, .widget_shopping_cart_content .woocommerce-Price-amount, .onsale, .ignition-slideshow .maxslider-slide-title { font-family: "Source Sans Pro", sans-serif; font-weight: 600; } .navigation-main { font-family: "Source Sans Pro", sans-serif; font-weight: 400; font-size: 16px; line-height: 1.25; text-transform: none; letter-spacing: 0em; } .page-hero-title, .page-title { font-family: "Source Sans Pro", sans-serif; font-weight: 600; } h1,.page-hero-title,.page-title { font-size: 28px; line-height: 1.15; text-transform: none; letter-spacing: -0.01em; } h2 { font-size: 26px; line-height: 1.15; text-transform: none; letter-spacing: -0.01em; } h3 { font-size: 24px; line-height: 1.2; text-transform: none; letter-spacing: -0.01em; } h4 { font-size: 22px; line-height: 1.25; text-transform: none; letter-spacing: -0.01em; } h5 { font-size: 18px; line-height: 1.25; text-transform: none; letter-spacing: -0.01em; } h6 { font-size: 16px; line-height: 1.32; text-transform: none; letter-spacing: -0.01em; } .widget-title { font-size: 18px; line-height: 1.2; text-transform: none; letter-spacing: -0.01em; } .widget { font-size: 16px; line-height: 1.5; text-transform: none; letter-spacing: 0em; } .btn, .button, .gutenbee-block-button-link, .wp-block-button__link, .comment-reply-link, .ci-item-filter, .maxslider-slide .maxslider-btn, .added_to_cart, input[type="submit"], input[type="reset"], button[type="submit"] { font-family: "Source Sans Pro", sans-serif; font-weight: 600; font-size: 16px; line-height: 1.25; text-transform: none; letter-spacing: 0em; } @media (max-width: 991px) { #mobilemenu { display: block; } .head-content-slot-mobile-nav { display: inline-block; } .nav { display: none; } .head-mast-inner { flex-wrap: wrap; margin: 0; padding: 15px 0; } .head-mast-inner .head-content-slot { margin: 0; } .head-mast-inner .head-content-slot-end { margin-left: auto; } .rtl .head-mast-inner .head-content-slot-end { margin-left: 0; margin-right: auto; } .head-mast-inner .head-content-slot-end .head-content-slot-item { margin-left: 5px; } .rtl .head-mast-inner .head-content-slot-end .head-content-slot-item { margin-left: 0; margin-right: 5px; } .site-branding { margin: 0 15px 0 0; width: auto; max-width: 140px; flex: none; } .rtl .site-branding { margin: 0 0 0 15px; } .site-logo { font-size: 26px; } .site-tagline { display: none; } .head-mast-inner .head-content-slot-search-bar { width: 100%; flex: none; order: 10; margin-top: 10px; } .head-mast-inner .head-content-slot-item { margin: 0; } .header-mini-cart-trigger .amount { display: none; } .head-mast-navigation-sticky-container { display: none; } } @media (min-width: 992px) { .page-hero { height: 300px; } } @media (min-width: 576px) and (max-width: 991px) { .page-hero { height: 300px; } } @media (max-width: 575px) { .page-hero { height: 300px; } } 
+/*# sourceURL=ignition-nozama-generated-styles-inline-css */
+</style>
+<link rel='stylesheet' id='ignition-nozama-style-child-css' href='https://eswargroups.in/wp-content/themes/ignition-nozama-child-Theme/style.css?ver=1.2.3-1.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawesome-5-free-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/fontawesome/fontawesome.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='boostify-hf-nav-menu-css-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/elementor/nav-menu.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='boostify-hf-search-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/elementor/search.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='boostify-hf-style-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/style.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='boostify-hf-cart-icon-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/elementor/cart-icon.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='ionicons-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/ionicons.css?ver=1768747919' media='all' />
+<link data-minify="1" rel='stylesheet' id='fontawesome-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/boostify-header-footer-builder/assets/css/awesome.css?ver=1768747919' media='all' />
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-f184cbd2-4c71-477b-867a-b7cc66ec1e66) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1768747920' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1768747920' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-montserrat-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1768749826' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-lato-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/lato.css?ver=1768811549' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-merriweather-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/merriweather.css?ver=1768749825' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-poppins-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/poppins.css?ver=1768747920' media='all' />
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='https://eswargroups.in/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-icons-fa-brands-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=1768756886' media='all' />
+<script src="https://eswargroups.in/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://eswargroups.in/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://eswargroups.in/wp-content/plugins/boostify-header-footer-builder/assets/js/sticky.min.js?ver=1.4.1" id="boostify-hf-sticky-js" data-rocket-defer defer></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="rocketlazyloadscript" data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-3N3JFVH5NG" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["eswargroups.in"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-3N3JFVH5NG");
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://eswargroups.in/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://eswargroups.in/wp-json/wp/v2/pages/698" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://eswargroups.in/xmlrpc.php?rsd" />
+<meta name="generator" content="Site Kit by Google 1.162.1" /><meta name="generator" content="Elementor 3.32.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<meta name="generator" content="Powered by Slider Revolution 6.5.11 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<link rel="icon" href="https://eswargroups.in/wp-content/uploads/2022/12/cropped-cropped-Esware-logo-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://eswargroups.in/wp-content/uploads/2022/12/cropped-cropped-Esware-logo-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://eswargroups.in/wp-content/uploads/2022/12/cropped-cropped-Esware-logo-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://eswargroups.in/wp-content/uploads/2022/12/cropped-cropped-Esware-logo-1-270x270.png" />
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {				 
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;	
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;	
+				try {								
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+					if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+						newh = Math.max(e.mh,window.RSIH);					
+					else{					
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,						
+							sl;					
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];									
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";					
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}					   
+			//});
+		  };</script>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--theme-primary: #F08804;--wp--preset--color--theme-secondary: #00A8DE;--wp--preset--color--theme-tertiary: #212e3c;--wp--preset--color--theme-dark-gray: #4A4A4A;--wp--preset--color--theme-medium-gray: #8E8E8E;--wp--preset--color--theme-light-gray: #DDDDDD;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='qlwapp-frontend-css' href='https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp-chat/build/frontend/css/style.css?ver=1768747920' media='all' />
+<link data-minify="1" rel='stylesheet' id='rs-plugin-settings-css' href='https://eswargroups.in/wp-content/cache/background-css/1/eswargroups.in/wp-content/cache/min/1/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=1768747920&wpr_t=1768816283' media='all' />
+<style id='rs-plugin-settings-inline-css'>
+#rs-demo-id {}
+/*# sourceURL=rs-plugin-settings-inline-css */
+</style>
+<style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">rs-dotted.twoxtwo{--wpr-bg-38868b69-9681-4afd-aeeb-09f14eedeb6a: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/gridtile.png');}rs-dotted.twoxtwowhite{--wpr-bg-ac4090eb-6dcf-400d-b7f0-136695992fd1: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/gridtile_white.png');}rs-dotted.threexthree{--wpr-bg-8f7d78c3-2c6b-420d-bbaa-a8675b252e73: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3.png');}rs-dotted.threexthreewhite{--wpr-bg-63979231-6bcc-43b7-b388-ede20ae8865a: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/gridtile_3x3_white.png');}.rs-layer.slidelink a div{--wpr-bg-738fdb54-8a28-4ac7-8618-9ebc7be1ec42: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/coloredbg.png');}.rs-layer.slidelink a span{--wpr-bg-dff75dbf-eb29-4bc4-8f03-ef96e387b1f5: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/coloredbg.png');}rs-loader.spinner0{--wpr-bg-d44044bc-d283-4f09-8fd5-6004be2fbce5: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/loader.gif');}rs-loader.spinner5{--wpr-bg-d55d6b5b-61f7-43f3-93c7-a05b6f2abdcf: url('https://eswargroups.in/wp-content/plugins/revslider/public/assets/assets/loader.gif');}.rll-youtube-player .play{--wpr-bg-f184cbd2-4c71-477b-867a-b7cc66ec1e66: url('https://eswargroups.in/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":"rs-dotted.twoxtwo","style":"rs-dotted.twoxtwo{--wpr-bg-38868b69-9681-4afd-aeeb-09f14eedeb6a: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile.png');}","hash":"38868b69-9681-4afd-aeeb-09f14eedeb6a","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile.png"},{"selector":"rs-dotted.twoxtwowhite","style":"rs-dotted.twoxtwowhite{--wpr-bg-ac4090eb-6dcf-400d-b7f0-136695992fd1: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_white.png');}","hash":"ac4090eb-6dcf-400d-b7f0-136695992fd1","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_white.png"},{"selector":"rs-dotted.threexthree","style":"rs-dotted.threexthree{--wpr-bg-8f7d78c3-2c6b-420d-bbaa-a8675b252e73: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3.png');}","hash":"8f7d78c3-2c6b-420d-bbaa-a8675b252e73","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3.png"},{"selector":"rs-dotted.threexthreewhite","style":"rs-dotted.threexthreewhite{--wpr-bg-63979231-6bcc-43b7-b388-ede20ae8865a: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3_white.png');}","hash":"63979231-6bcc-43b7-b388-ede20ae8865a","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/gridtile_3x3_white.png"},{"selector":".rs-layer.slidelink a div","style":".rs-layer.slidelink a div{--wpr-bg-738fdb54-8a28-4ac7-8618-9ebc7be1ec42: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png');}","hash":"738fdb54-8a28-4ac7-8618-9ebc7be1ec42","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png"},{"selector":".rs-layer.slidelink a span","style":".rs-layer.slidelink a span{--wpr-bg-dff75dbf-eb29-4bc4-8f03-ef96e387b1f5: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png');}","hash":"dff75dbf-eb29-4bc4-8f03-ef96e387b1f5","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/coloredbg.png"},{"selector":"rs-loader.spinner0","style":"rs-loader.spinner0{--wpr-bg-d44044bc-d283-4f09-8fd5-6004be2fbce5: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif');}","hash":"d44044bc-d283-4f09-8fd5-6004be2fbce5","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif"},{"selector":"rs-loader.spinner5","style":"rs-loader.spinner5{--wpr-bg-d55d6b5b-61f7-43f3-93c7-a05b6f2abdcf: url('https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif');}","hash":"d55d6b5b-61f7-43f3-93c7-a05b6f2abdcf","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/revslider\/public\/assets\/assets\/loader.gif"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-f184cbd2-4c71-477b-867a-b7cc66ec1e66: url('https:\/\/eswargroups.in\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"f184cbd2-4c71-477b-867a-b7cc66ec1e66","url":"https:\/\/eswargroups.in\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.19.1.2" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_defer_js wpr_minify_js wpr_lazyload_images wpr_lazyload_iframes wpr_cache_webp wpr_minify_css wpr_cdn wpr_preload_links wpr_host_fonts_locally" /></head>
+
+<body class="wp-singular page-template page-template-elementor_header_footer page page-id-698 wp-custom-logo wp-embed-responsive wp-theme-ignition-nozama wp-child-theme-ignition-nozama-child-Theme boostify-header-footer-1.4.1 ignition-header-type-normal ignition-page-title-bg-off ignition-page-title-normal-on ignition-page-title-subtitle-on ignition-page-breadcrumb-on ignition-site-layout-content_sidebar ignition-top-bar-visible-off ignition-header-menu-layout-full_right ignition-header-fullwidth-off ignition-header-sticky-on ignition-header-sticky-type-shy ignition-mobile-nav-slide-right-off ignition-page-title-horz-align-left ignition-blog-layout-content_sidebar ignition-blog-single-layout-content_sidebar ignition-blog-posts-layout-1col-horz ignition-footer-visible-on ignition-site-title-on ignition-site-description-on ignition-no-main-padding-off elementor-default elementor-template-full-width elementor-kit-291 elementor-page elementor-page-698">
+<div data-rocket-location-hash="8541d5333f7e39ff67ec406b433b6874"><a class="skip-link sr-only sr-only-focusable" href="#site-content">Skip to the content</a></div>
+<div data-rocket-location-hash="0b4dc6d9f90ddd645dc46c94e85f76f5" id="page" class="bhf-site">
+<header data-rocket-location-hash="3e43b09be0d80a0cd46f55dbf0858105" id="masthead" class="boostify-site-header">
+			<div data-rocket-location-hash="bb6b52ccfac4ea5a48394423ddaf3afb" data-elementor-type="wp-post" data-elementor-id="406" class="elementor elementor-406">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-d842942 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d842942" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5b3a212" data-id="5b3a212" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-827788c elementor-widget__width-auto elementor-widget elementor-widget-image" data-id="827788c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://eswargroups.in/">
+							<img fetchpriority="high" decoding="async" width="500" height="368" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20500%20368'%3E%3C/svg%3E" class="attachment-full size-full wp-image-1961" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png 500w, https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png 300w" data-lazy-sizes="(max-width: 500px) 100vw, 500px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png" /><noscript><img fetchpriority="high" decoding="async" width="500" height="368" src="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png" class="attachment-full size-full wp-image-1961" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png 500w, https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></noscript>								</a>
+															</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-26199a6" data-id="26199a6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a7e69e9 elementor-widget elementor-widget-ht-hf-nav-menu" data-id="a7e69e9" data-element_type="widget" data-widget_type="ht-hf-nav-menu.default">
+				<div class="elementor-widget-container">
+							<div class="boostify-navigation--widget">
+			<nav class="boostify-main-navigation boostify-nav-default boostify-nav boostify-header-navigation nav-menu boostify--hover-underline" aria-label="Primary navigation">
+				<ul id="menu-nav-menu-2" class="boostify-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-605"><a href="https://eswargroups.in/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-698 current_page_item menu-item-876"><a href="https://eswargroups.in/about/" aria-current="page">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1673"><a href="https://eswargroups.in/electricals/">Electricals</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598"><a href="https://eswargroups.in/motors/">Motors</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="https://eswargroups.in/batteries/">Batteries</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1739"><a href="https://eswargroups.in/electronics/">Electronics</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607"><a href="https://eswargroups.in/television/">Television</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a href="https://eswargroups.in/air-conditioner/">Air Conditioner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1609"><a href="https://eswargroups.in/fan/">Fan</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603"><a href="https://eswargroups.in/refrigerator/">Refrigerator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1606"><a href="https://eswargroups.in/washing-machine/">Washing Machine</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1610"><a href="https://eswargroups.in/mobiles/">Mobiles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602"><a href="https://eswargroups.in/water-purifier/">Water Purifier</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="https://eswargroups.in/water-heater/">Water Heater</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="https://eswargroups.in/sanitary-wares/">Sanitary Wares</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://eswargroups.in/contact/">Contact</a></li>
+</ul>			</nav>
+
+					<a href="#" class="boostify-menu-toggle" aria-expanded="false">
+			<span class="menu-toggle-wrapper fa fa-navicon"></span><!-- .menu-toggle-wrapper -->
+			<span class="screen-reader-text menu-toggle-text">Menu</span>
+		</a><!-- .menu-toggle -->
+		
+			<div class="boostify-menu-sidebar boostify--hover-underline show-logo- show-form-">
+				<div class="boostify-menu-sidebar--wrapper">
+					
+					
+					<nav class="boostify-menu-dropdown nav-menu" aria-label="Dropdown navigation">
+						<ul id="menu-nav-menu-3" class="boostify-dropdown-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-605"><a href="https://eswargroups.in/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-698 current_page_item menu-item-876"><a href="https://eswargroups.in/about/" aria-current="page">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1673"><a href="https://eswargroups.in/electricals/">Electricals</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1598"><a href="https://eswargroups.in/motors/">Motors</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1597"><a href="https://eswargroups.in/batteries/">Batteries</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1739"><a href="https://eswargroups.in/electronics/">Electronics</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1607"><a href="https://eswargroups.in/television/">Television</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1605"><a href="https://eswargroups.in/air-conditioner/">Air Conditioner</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1609"><a href="https://eswargroups.in/fan/">Fan</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1603"><a href="https://eswargroups.in/refrigerator/">Refrigerator</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1606"><a href="https://eswargroups.in/washing-machine/">Washing Machine</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1610"><a href="https://eswargroups.in/mobiles/">Mobiles</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1602"><a href="https://eswargroups.in/water-purifier/">Water Purifier</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1604"><a href="https://eswargroups.in/water-heater/">Water Heater</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1608"><a href="https://eswargroups.in/sanitary-wares/">Sanitary Wares</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://eswargroups.in/contact/">Contact</a></li>
+</ul>					</nav>
+
+									</div>
+			</div>
+		</div>
+		<div class="boostify-overlay">
+			<a href="#" class="boostify--close-menu-side-bar ion-android-close"></a>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8daefe1 elementor-widget elementor-widget-html" data-id="8daefe1" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-G06SHHC497"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G06SHHC497');
+</script>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</header>
+		<div data-rocket-location-hash="6cc52b9fcf6666be5c0252ad24273e00" data-elementor-type="wp-page" data-elementor-id="698" class="elementor elementor-698">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-2b35bffc elementor-section-stretched elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle" data-id="2b35bffc" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;zigzag&quot;}">
+							<div class="elementor-background-overlay"></div>
+						<div class="elementor-shape elementor-shape-bottom" aria-hidden="true" data-negative="false">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 5.8" preserveAspectRatio="none">
+  <path class="elementor-shape-fill" d="M5.4.4l5.4 5.3L16.5.4l5.4 5.3L27.5.4 33 5.7 38.6.4l5.5 5.4h.1L49.9.4l5.4 5.3L60.9.4l5.5 5.3L72 .4l5.5 5.3L83.1.4l5.4 5.3L94.1.4l5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3L161 .4l5.4 5.3L172 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3L261 .4l5.4 5.3L272 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3L361 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3L461 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1L550 .4l5.4 5.3L561 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2L650 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2L750 .4l5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2L850 .4l5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.4h.2l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.7-5.4 5.4 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.5 5.4h.1l5.6-5.4 5.5 5.3 5.6-5.3 5.5 5.3 5.6-5.3 5.4 5.3 5.7-5.3 5.4 5.3 5.6-5.3 5.5 5.4V0H-.2v5.8z"/>
+</svg>
+		</div>
+					<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2b381ac" data-id="2b381ac" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d52f136 elementor-widget elementor-widget-spacer" data-id="d52f136" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5fe7501f premium-title-icon-row premium-title-color elementor-widget elementor-widget-premium-addon-title" data-id="5fe7501f" data-element_type="widget" data-widget_type="premium-addon-title.default">
+				<div class="elementor-widget-container">
+					
+		<div class="premium-title-container style1">
+			<h1 class="premium-title-header premium-title-style1">
+				
+															<i class="premium-title-icon premium-svg-nodraw premium-drawable-icon fab fa-yelp" aria-hidden="true"></i>
+									
+												<span class="premium-title-text" >
+					Eswar Groups				</span>
+					
+											</h1>
+		</div>
+
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-534b6ff8 elementor-widget elementor-widget-heading" data-id="534b6ff8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Electrical,Electronics &amp; Mobiles</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-464c4011 elementor-widget elementor-widget-text-editor" data-id="464c4011" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									As one of the top players in the category of Mobile Phone Dealers in Tirunelveli, Eswar Mobiles was established in 2013 in Sankarankovil. This well-known establishment serves both local and out-of-town customers. 								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-pa-eq-height="{&quot;targetType&quot;:&quot;widget&quot;,&quot;target&quot;:[&quot;.elementor-widget-premium-addon-fancy-text .elementor-widget-container&quot;],&quot;trigger&quot;:&quot;load&quot;,&quot;enableOn&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;]}" class="elementor-section elementor-top-section elementor-element elementor-element-3272419 premium-equal-height-yes elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3272419" data-element_type="section" data-settings="{&quot;premium_eq_height_switcher&quot;:&quot;yes&quot;,&quot;premium_eq_height_target&quot;:[&quot;.elementor-widget-premium-addon-fancy-text .elementor-widget-container&quot;]}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-18d1c00" data-id="18d1c00" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-2f2e735 premium-atext__switch elementor-widget elementor-widget-premium-addon-fancy-text" data-id="2f2e735" data-element_type="widget" data-widget_type="premium-addon-fancy-text.default">
+				<div class="elementor-widget-container">
+							<div class="premium-atext__wrapper premium-atext__typing " data-start-effect="page_load" data-settings="{&quot;effect&quot;:&quot;typing&quot;,&quot;strings&quot;:[&quot;Electrical&quot;,&quot;Electronics&quot;,&quot;Mobiles&quot;],&quot;typeSpeed&quot;:100,&quot;backSpeed&quot;:100,&quot;startDelay&quot;:100,&quot;backDelay&quot;:100,&quot;showCursor&quot;:true,&quot;loop&quot;:true,&quot;loading&quot;:false,&quot;style&quot;:&quot;switch&quot;}">
+
+			<h3 class="premium-atext__headline">
+							<span class="premium-prefix-text">
+					<span >Eswar</span>
+				</span>
+			
+						<span class="premium-atext__text"></span>
+		
+							<span class="premium-suffix-text">
+					<span >Store</span>
+				</span>
+			
+			
+			</h3>
+		</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-rocket-location-hash="83d2edee61aa4873c725f27a23c023d9" class="elementor-section elementor-top-section elementor-element elementor-element-b83e001 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b83e001" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-37a9ac6" data-id="37a9ac6" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-d64eb63 elementor-widget elementor-widget-text-editor" data-id="d64eb63" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									In the field of Mobile Phone Dealers, Eswar Mobiles in Sankarankovil is one of the leading companies. Also known for Mobile Phone Dealers, Mobile Phone Repair &amp; Services, Mobile Phone Repair &amp; Services-Apple, Mobile Phone Repair &amp; Services-Oppo, Mobile Phone Dealers-Samsung, Mobile Phone Repair &amp; Services-Samsung, Mobile Phone Repair &amp; Services-MI, Mobile Phone Simcard Dealers, etc. Eswar Mobiles, Sankarankovil: Get the Address, Contact Number, Reviews &amp; Ratings, Photos, and Maps.<br>
+Today, almost everyone owns a mobile phone. Rural India is also realizing the benefits of owning a mobile phone, not just urban India. The more things you can cross off your list while on the move, the easier life gets. It&#8217;s important to locate some good Mobile Phone Dealers if you&#8217;re looking for a smartphone with several swanky features or a simple mobile device that helps you stay connected. In this area, it is quite popular. Ratings have been given to them.								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-rocket-location-hash="b89316ec60ea44d18144db320d22efe2" class="elementor-section elementor-top-section elementor-element elementor-element-1edf144 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1edf144" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-be0e3d3" data-id="be0e3d3" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-dbdf749 elementor-widget elementor-widget-premium-image-scroll" data-id="dbdf749" data-element_type="widget" data-widget_type="premium-image-scroll.default">
+				<div class="elementor-widget-container">
+								<div class="premium-image-scroll-section" >
+				<div class="premium-image-scroll-container" data-settings="{&quot;trigger&quot;:&quot;hover&quot;,&quot;direction&quot;:&quot;vertical&quot;,&quot;reverse&quot;:&quot;&quot;}">
+											<div class="premium-image-scroll-content">
+							<svg class="premium-image-scroll-icon pa-vertical-mouse-scroll" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve"><style type="text/css">.st0{display:none;}.st1{display:inline;}</style><g><path d="M67.7,42.6c0-9.6-7.8-17.3-17.3-17.3h-0.8c-9.6,0-17.3,7.8-17.3,17.3v14.7c0,9.6,7.8,17.3,17.3,17.3h0.8c9.6,0,17.3-7.8,17.3-17.3V42.6z M64.8,57.4c0,4-1.6,7.6-4.2,10.2c-2.6,2.6-6.2,4.2-10.2,4.2h-0.8c-4,0-7.6-1.6-10.2-4.2c-2.6-2.6-4.2-6.2-4.2-10.2V42.6c0-4,1.6-7.6,4.2-10.2c2.6-2.6,6.2-4.2,10.2-4.2h0.8c4,0,7.6,1.6,10.2,4.2c2.6,2.6,4.2,6.2,4.2,10.2V57.4z"/><path d="M50,39.9c-0.8,0-1.5,0.7-1.5,1.5v4.3c0,0.8,0.7,1.5,1.5,1.5c0.8,0,1.5-0.7,1.5-1.5v-4.3C51.4,40.6,50.8,39.9,50,39.9z"/><g><path d="M49.1,94.7c0.5,0.4,1.3,0.4,1.8,0l7.3-5.8c0.6-0.5,0.7-1.4,0.2-2c-0.5-0.6-1.4-0.7-2-0.2l0,0L50,91.7l-6.4-5.1c-0.6-0.5-1.5-0.4-2,0.2c-0.5,0.6-0.4,1.5,0.2,2L49.1,94.7z"/><path d="M56.4,13.4c0.6,0.5,1.5,0.4,2-0.2s0.4-1.5-0.2-2l-7.3-5.8c-0.5-0.4-1.3-0.4-1.8,0l-7.3,5.8c-0.6,0.5-0.7,1.4-0.2,2s1.4,0.7,2,0.2l0,0L50,8.3L56.4,13.4z"/></g><g class="st0"><path class="st1" d="M5.3,49.1c-0.4,0.5-0.4,1.3,0,1.8l5.8,7.3c0.5,0.6,1.4,0.7,2,0.2c0.6-0.5,0.7-1.4,0.2-2l0,0L8.3,50l5.1-6.4c0.5-0.6,0.4-1.5-0.2-2c-0.6-0.5-1.5-0.4-2,0.2L5.3,49.1z"/><path class="st1" d="M86.6,56.4c-0.5,0.6-0.4,1.5,0.2,2s1.5,0.4,2-0.2l5.8-7.3c0.4-0.5,0.4-1.3,0-1.8l-5.8-7.3c-0.5-0.6-1.4-0.7-2-0.2s-0.7,1.4-0.2,2l0,0l5.1,6.4L86.6,56.4z"/></g></g></svg>						</div>
+										<div class="premium-image-scroll-vertical premium-image-scroll-mask-media">
+													<div class="premium-image-scroll-overlay">
+														</div>
+							<img decoding="async" width="2083" height="2056" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202083%202056'%3E%3C/svg%3E" class="attachment-full size-full wp-image-1937" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg 2083w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-300x296.jpg 300w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-1024x1011.jpg 1024w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-768x758.jpg 768w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-1536x1516.jpg 1536w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-2048x2021.jpg 2048w" data-lazy-sizes="(max-width: 2083px) 100vw, 2083px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg" /><noscript><img decoding="async" width="2083" height="2056" src="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg" class="attachment-full size-full wp-image-1937" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/Banner-03.jpg 2083w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-300x296.jpg 300w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-1024x1011.jpg 1024w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-768x758.jpg 768w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-1536x1516.jpg 1536w, https://eswargroups.in/wp-content/uploads/2022/12/Banner-03-2048x2021.jpg 2048w" sizes="(max-width: 2083px) 100vw, 2083px" /></noscript>					</div>
+				</div>
+			</div>
+						</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-rocket-location-hash="65edfac1d6751505fc91a058cd24d2f5" class="elementor-section elementor-top-section elementor-element elementor-element-2eb83bc6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2eb83bc6" data-element_type="section" id="premium-banner">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9af40d4" data-id="9af40d4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-635da7f7 elementor-widget elementor-widget-heading" data-id="635da7f7" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h3 class="elementor-heading-title elementor-size-default">Eswar groups</h3>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5af24bcc elementor-widget elementor-widget-heading" data-id="5af24bcc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Top Product</h1>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-rocket-location-hash="cb68a01c41495ee4e0392ca1d31beda4" class="elementor-section elementor-top-section elementor-element elementor-element-62111094 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="62111094" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-646beefa" data-id="646beefa" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-75d28486 elementor-widget elementor-widget-premium-addon-banner" data-id="75d28486" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="750" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20750'%3E%3C/svg%3E" class="attachment-full size-full wp-image-837" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp 650w, https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2-260x300.webp 260w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp" /><noscript><img decoding="async" width="650" height="750" src="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp" class="attachment-full size-full wp-image-837" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp 650w, https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2-260x300.webp 260w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h2 class="premium-banner-ib-title premium_banner_title">Mobiles</h2>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>Mobile &amp; Laptops</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-23cb6a9" data-id="23cb6a9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-457db1b2 elementor-widget elementor-widget-spacer" data-id="457db1b2" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4be21996 elementor-widget elementor-widget-premium-addon-banner" data-id="4be21996" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="750" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20750'%3E%3C/svg%3E" class="attachment-full size-full wp-image-853" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp 650w,https://eswargroups.in/wp-content/uploads/2022/12/appliances_1-260x300.png 260w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp" /><noscript><img loading="lazy" decoding="async" width="650" height="750" src="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp" class="attachment-full size-full wp-image-853" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp 650w,https://eswargroups.in/wp-content/uploads/2022/12/appliances_1-260x300.png 260w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h3 class="premium-banner-ib-title premium_banner_title">Home Appliance</h3>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>TV, Fridge, Washing Machine, Ac</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-37a12f60" data-id="37a12f60" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-73a778fe elementor-widget elementor-widget-spacer" data-id="73a778fe" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-717494ec elementor-widget elementor-widget-premium-addon-banner" data-id="717494ec" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="695" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20695'%3E%3C/svg%3E" class="attachment-full size-full wp-image-852" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png 650w, https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461-281x300.png 281w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png" /><noscript><img loading="lazy" decoding="async" width="650" height="695" src="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png" class="attachment-full size-full wp-image-852" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png 650w, https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461-281x300.png 281w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h3 class="premium-banner-ib-title premium_banner_title">Electricals</h3>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>Bulb, Tubelight,</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section data-rocket-location-hash="2006b8a183f66c8e6e1c81450fcb27f4" class="elementor-section elementor-top-section elementor-element elementor-element-ed8ab3e elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ed8ab3e" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f0d9d0f" data-id="f0d9d0f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cd4ea3a elementor-widget elementor-widget-premium-addon-banner" data-id="cd4ea3a" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="750" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20750'%3E%3C/svg%3E" class="attachment-full size-full wp-image-837" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp 650w, https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2-260x300.webp 260w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp" /><noscript><img decoding="async" width="650" height="750" src="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp" class="attachment-full size-full wp-image-837" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2.webp 650w, https://eswargroups.in/wp-content/uploads/2022/12/smartphone-2-260x300.webp 260w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h2 class="premium-banner-ib-title premium_banner_title">Mobiles</h2>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>Mobile &amp; Laptops</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1637845" data-id="1637845" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-9c670e8 elementor-widget elementor-widget-spacer" data-id="9c670e8" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d14936b elementor-widget elementor-widget-premium-addon-banner" data-id="d14936b" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="750" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20750'%3E%3C/svg%3E" class="attachment-full size-full wp-image-853" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp 650w,https://eswargroups.in/wp-content/uploads/2022/12/appliances_1-260x300.png 260w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp" /><noscript><img loading="lazy" decoding="async" width="650" height="750" src="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp" class="attachment-full size-full wp-image-853" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/appliances_1.webp 650w,https://eswargroups.in/wp-content/uploads/2022/12/appliances_1-260x300.png 260w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h3 class="premium-banner-ib-title premium_banner_title">Home Appliance</h3>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>TV, Fridge, Washing Machine, Ac</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-ffcfe6b" data-id="ffcfe6b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-0c57136 elementor-widget elementor-widget-spacer" data-id="0c57136" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-06dc77e elementor-widget elementor-widget-premium-addon-banner" data-id="06dc77e" data-element_type="widget" data-widget_type="premium-addon-banner.default">
+				<div class="elementor-widget-container">
+							<div class="premium-banner-ib premium-banner-min-height premium-banner-animation1 none">
+										<img decoding="async" width="650" height="695" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20695'%3E%3C/svg%3E" class="attachment-full size-full wp-image-852" alt="" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png 650w, https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461-281x300.png 281w" data-lazy-sizes="(max-width: 650px) 100vw, 650px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png" /><noscript><img loading="lazy" decoding="async" width="650" height="695" src="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png" class="attachment-full size-full wp-image-852" alt="" srcset="https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461.png 650w, https://eswargroups.in/wp-content/uploads/2022/12/electrical-equipment-repair-electric-systems-260nw-1252208461-281x300.png 281w" sizes="(max-width: 650px) 100vw, 650px" /></noscript>									<div class="premium-banner-ib-desc">
+									<h3 class="premium-banner-ib-title premium_banner_title">Electricals</h3>						<div class="premium-banner-ib-content premium_banner_content">
+							<p>Bulb, Tubelight,</p>						</div>
+																	</div>
+					</div>
+								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+			</div> <!-- .site-content-wrap -->
+
+	
+
+	<footer data-rocket-location-hash="b1228bb6d465c3b12aa29baf0654f889" class="footer">
+
+		
+		<div data-rocket-location-hash="a3deebd6549ca7a7bb8d4175a4a71688" class="footer-widgets">
+	<div data-rocket-location-hash="e78f661669626b32a35ef61e94e53af1" class="container">
+		<div class="row">
+							<div class="col-xl-3 col-md-6 col-12">
+											<div id="text-3" class="widget widget_text">			<div class="textwidget"><p><a href="https://eswargroups.in/"><img decoding="async" class="alignnone wp-image-1961 size-medium" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%20221'%3E%3C/svg%3E" alt="" width="300" height="221" data-lazy-srcset="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png 300w, https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png 500w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png" /><noscript><img loading="lazy" decoding="async" class="alignnone wp-image-1961 size-medium" src="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png" alt="" width="300" height="221" srcset="https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize-300x221.png 300w, https://eswargroups.in/wp-content/uploads/2022/12/Eswar-logo-resize.png 500w" sizes="(max-width: 300px) 100vw, 300px" /></noscript></a></p>
+<p>&nbsp;</p>
+</div>
+		</div><div id="text-4" class="widget widget_text"><h3 class="widget-title">Find Us</h3>			<div class="textwidget"><ul>
+<li>Eswar Mobiles and computers, 26,swamy shanathi kovilvasal,sankarankovil</li>
+<li>+91 9442631619</li>
+<li>eswarelectricals6666@gmail.com</li>
+</ul>
+</div>
+		</div>									</div>
+							<div class="col-xl-3 col-md-6 col-12">
+											<div id="custom_html-3" class="widget_text widget widget_custom_html"><h3 class="widget-title">Location</h3><div class="textwidget custom-html-widget"><iframe src="about:blank" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" data-rocket-lazyload="fitvidscompatible" data-lazy-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.812300259216!2d77.53286111478778!3d9.171398143422167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b069779d5ddda57%3A0x3bdedb07af15ff87!2sEswar%20Mobiles%20and%20computers!5e0!3m2!1sen!2sin!4v1670930783721!5m2!1sen!2sin"></iframe><noscript><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.812300259216!2d77.53286111478778!3d9.171398143422167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b069779d5ddda57%3A0x3bdedb07af15ff87!2sEswar%20Mobiles%20and%20computers!5e0!3m2!1sen!2sin!4v1670930783721!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></noscript></div></div>									</div>
+							<div class="col-xl-3 col-md-6 col-12">
+											<div id="nav_menu-1" class="widget widget_nav_menu"><h3 class="widget-title">Quick Menu</h3><nav class="menu-footer-menu-container" aria-label="Quick Menu"><ul id="menu-footer-menu" class="menu ignition-menu-footer-menu"><li id="menu-item-700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-700"><a href="https://eswargroups.in/">Home</a></li>
+<li id="menu-item-702" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-698 current_page_item menu-item-702"><a href="https://eswargroups.in/about/" aria-current="page">About</a></li>
+<li id="menu-item-2663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2663"><a href="https://eswargroups.in/air-conditioner/">Air Conditioner</a></li>
+<li id="menu-item-2664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2664"><a href="https://eswargroups.in/batteries/">Batteries</a></li>
+<li id="menu-item-2665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2665"><a href="https://eswargroups.in/computer/">Computer</a></li>
+<li id="menu-item-2666" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2666"><a href="https://eswargroups.in/electricals/">Electricals</a></li>
+<li id="menu-item-2667" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2667"><a href="https://eswargroups.in/electronics/">Electronics</a></li>
+<li id="menu-item-2668" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2668"><a href="https://eswargroups.in/mobiles/">Mobiles</a></li>
+<li id="menu-item-2669" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2669"><a href="https://eswargroups.in/television/">Television</a></li>
+<li id="menu-item-2670" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2670"><a href="https://eswargroups.in/washing-machine/">Washing Machine</a></li>
+<li id="menu-item-701" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-701"><a href="https://eswargroups.in/contact/">Contact</a></li>
+</ul></nav></div>									</div>
+							<div class="col-xl-3 col-md-6 col-12">
+											<div id="custom_html-2" class="widget_text widget widget_custom_html"><h3 class="widget-title">Get a Quote for FREE</h3><div class="textwidget custom-html-widget">	<style>
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 0px;
+			background-color: #2c3e50;
+		}
+	
+		label {
+			font-weight: bold;
+			margin-bottom: 10px;
+			color: #fff;
+		}
+
+		input {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 300px;
+			font-size: 16px;
+		}
+
+		button {
+			padding: 10px 20px;
+			background-color: #3f51b5;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #2c3e50;
+		}
+	</style>
+
+	<form id="message-form">
+
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
+
+		<button type="submit">Send Message</button>
+	</form>
+
+	<script type="rocketlazyloadscript">
+		const form = document.getElementById("message-form");
+		form.addEventListener("submit", function(event) {
+			event.preventDefault();
+			const name = document.getElementById("name").value;
+			const phone = document.getElementById("phone").value;
+
+			// Replace the message text below with your desired message
+			const message = `Hi ${name}, this is a test message sent from my website!`;
+
+			// Replace the phone number below with your desired recipient phone number
+			const whatsappUrl = `https://wa.me/${9994701046}?text=${encodeURIComponent(message)}`;
+
+			window.open(whatsappUrl, "_blank");
+		});
+	</script></div></div>									</div>
+					</div>
+	</div>
+</div>
+
+			<div data-rocket-location-hash="52cd114530bf354ddd7733809cd95a21" class="footer-info">
+		<div data-rocket-location-hash="9977d61c3ff181bf93d694767789968e" class="container">
+			<div class="row align-items-center">
+				<div class="col-md-6 col-12">
+											<div class="footer-content-slot">
+							<div class="footer-content-slot-item"><a href="https://www.cssigniter.com/themes/nozama/" target="_blank" rel="nofollow">Ignition Nozama Child Theme</a> - Child theme for Nozama &#8211; Ignition</div>						</div>
+									</div>
+
+				<div class="col-md-6 col-12">
+											<div class="footer-content-slot footer-content-slot-end">
+							<div class="footer-content-slot-item">A theme by <a href="https://www.cssigniter.com/" rel="nofollow">CSSIgniter</a> - Powered by WordPress</div>						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+
+		
+<button class="btn-to-top">
+	<span class="ignition-icons ignition-icons-arrow-up"></span>
+</button>
+
+		
+	</footer>
+
+
+</div> <!-- .page-wrap -->
+	<script data-minify="1" src="https://eswargroups.in/wp-content/cache/min/1/ajax/libs/jquery/1.11.1/jquery.min.js?ver=1759581217"></script>
+		<script type="rocketlazyloadscript">
+		function submitToWhatsapp() {
+			const name = document.getElementById("name").value;
+			const phone = document.getElementById("phone").value;
+			const email = document.getElementById("email").value;
+			const location = document.getElementById("location").value;
+			const description = document.getElementById("description").value;
+
+			const message = `Name: ${name}%0aPhone Number: ${phone}%0aEmail: ${email}%0aLocation: ${location}%0aDescription: ${description}`;
+
+			window.location.href = `https://wa.me/+919442631619?text=${message}`;
+		}
+	</script>
+
+<div class="navigation-mobile-wrap">
+	<a href="#nav-dismiss" class="navigation-mobile-dismiss">
+		Close Menu	</a>
+	<ul class="navigation-mobile"></ul>
+</div>
+
+
+		<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/ignition-nozama-child-Theme/*","/wp-content/themes/ignition-nozama/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+			<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+					<div 
+			class="qlwapp"
+			style="--qlwapp-scheme-font-family:inherit;--qlwapp-scheme-font-size:18px;--qlwapp-scheme-icon-size:60px;--qlwapp-scheme-icon-font-size:24px;--qlwapp-scheme-box-max-height:400px;--qlwapp-scheme-box-message-word-break:break-all;--qlwapp-button-animation-name:none;--qlwapp-button-notification-bubble-animation:none;"
+			data-contacts="[{&quot;id&quot;:0,&quot;order&quot;:1,&quot;active&quot;:1,&quot;chat&quot;:1,&quot;avatar&quot;:&quot;https:\/\/www.gravatar.com\/avatar\/00000000000000000000000000000000&quot;,&quot;type&quot;:&quot;phone&quot;,&quot;phone&quot;:&quot;919442631619&quot;,&quot;group&quot;:&quot;https:\/\/chat.whatsapp.com\/EQuPUtcPzEdIZVlT8JyyNw&quot;,&quot;firstname&quot;:&quot;John&quot;,&quot;lastname&quot;:&quot;Doe&quot;,&quot;label&quot;:&quot;Support&quot;,&quot;message&quot;:&quot;&quot;,&quot;timefrom&quot;:&quot;00:00&quot;,&quot;timeto&quot;:&quot;00:00&quot;,&quot;timezone&quot;:&quot;UTC+0&quot;,&quot;visibility&quot;:&quot;readonly&quot;,&quot;timedays&quot;:[],&quot;display&quot;:{&quot;entries&quot;:{&quot;post&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;page&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;e-landing-page&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;btf_builder&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;ignition-gsection&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]}},&quot;taxonomies&quot;:{&quot;category&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;post_tag&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]}},&quot;target&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;devices&quot;:&quot;all&quot;}}]"
+			data-display="{&quot;devices&quot;:&quot;all&quot;,&quot;entries&quot;:{&quot;post&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;page&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;e-landing-page&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;btf_builder&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;ignition-gsection&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]}},&quot;taxonomies&quot;:{&quot;category&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]},&quot;post_tag&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]}},&quot;target&quot;:{&quot;include&quot;:1,&quot;ids&quot;:[]}}"
+			data-button="{&quot;layout&quot;:&quot;button&quot;,&quot;box&quot;:&quot;no&quot;,&quot;position&quot;:&quot;bottom-right&quot;,&quot;text&quot;:&quot;How can I help you?&quot;,&quot;message&quot;:&quot;&quot;,&quot;icon&quot;:&quot;qlwapp-whatsapp-icon&quot;,&quot;type&quot;:&quot;phone&quot;,&quot;phone&quot;:&quot;919442631619&quot;,&quot;group&quot;:&quot;&quot;,&quot;developer&quot;:&quot;no&quot;,&quot;rounded&quot;:&quot;yes&quot;,&quot;timefrom&quot;:&quot;00:00&quot;,&quot;timeto&quot;:&quot;00:00&quot;,&quot;timedays&quot;:[],&quot;timezone&quot;:&quot;UTC+0&quot;,&quot;visibility&quot;:&quot;readonly&quot;,&quot;animation_name&quot;:&quot;none&quot;,&quot;animation_delay&quot;:&quot;&quot;,&quot;whatsapp_link_type&quot;:&quot;web&quot;,&quot;notification_bubble&quot;:&quot;none&quot;,&quot;notification_bubble_animation&quot;:&quot;none&quot;}"
+			data-box="{&quot;enable&quot;:&quot;yes&quot;,&quot;auto_open&quot;:&quot;no&quot;,&quot;auto_delay_open&quot;:1000,&quot;lazy_load&quot;:&quot;no&quot;,&quot;allow_outside_close&quot;:&quot;no&quot;,&quot;header&quot;:&quot;&lt;h3 style=\&quot;\n\t\t\t\t\t\t\t\t\tfont-size: 26px;\n\t\t\t\t\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\t\t\t\t\tmargin: 0 0 0.25em 0;\n\t\t\t\t\t\t\t\t\&quot;&gt;Hello!&lt;\/h3&gt;\n\t\t\t\t\t\t\t\t&lt;p style=\&quot;\n\t\t\t\t\t\t\t\t\tfont-size: 14px;\n\t\t\t\t\t\t\t\t\&quot;&gt;Click one of our contacts below to chat on WhatsApp&lt;\/p&gt;&quot;,&quot;footer&quot;:&quot;&lt;p style=\&quot;text-align: start;\&quot;&gt;Need help? Our team is just a message away&lt;\/p&gt;&quot;,&quot;response&quot;:&quot;Write a response&quot;,&quot;consentMessage&quot;:&quot;I accept cookies and privacy policy.&quot;,&quot;consentEnabled&quot;:0}"
+			data-scheme="{&quot;font_family&quot;:&quot;inherit&quot;,&quot;font_size&quot;:&quot;18&quot;,&quot;icon_size&quot;:&quot;60&quot;,&quot;icon_font_size&quot;:&quot;24&quot;,&quot;box_max_height&quot;:&quot;400&quot;,&quot;brand&quot;:&quot;&quot;,&quot;text&quot;:&quot;&quot;,&quot;link&quot;:&quot;&quot;,&quot;message&quot;:&quot;&quot;,&quot;label&quot;:&quot;&quot;,&quot;name&quot;:&quot;&quot;,&quot;contact_role_color&quot;:&quot;&quot;,&quot;contact_name_color&quot;:&quot;&quot;,&quot;contact_availability_color&quot;:&quot;&quot;,&quot;box_message_word_break&quot;:&quot;break-all&quot;}"
+		>
+					</div>
+		<script id="pa-frontend-js-extra">
+var PremiumSettings = {"ajaxurl":"https://eswargroups.in/wp-admin/admin-ajax.php","nonce":"7e542537e6"};
+//# sourceURL=pa-frontend-js-extra
+</script>
+<script src="https://eswargroups.in/wp-content/uploads/premium-addons-elementor/pa-frontend-a054dbca5.min.js?ver=1768816281" id="pa-frontend-js" data-rocket-defer defer></script>
+<script data-minify="1" src="https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/gutenbee/build/gutenbee.animations.js?ver=1759581217" id="gutenbee-animations-js" data-rocket-defer defer></script>
+<script id="ignition-front-scripts-js-extra">
+var ignition_front_vars = {"expand_submenu":"Expand submenu"};
+//# sourceURL=ignition-front-scripts-js-extra
+</script>
+<script src="https://eswargroups.in/wp-content/plugins/ignition/inc/assets/js/scripts.min.js?ver=2.2.0" id="ignition-front-scripts-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.11" defer async id="tp-tools-js"></script>
+<script src="https://eswargroups.in/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.11" defer async id="revmin-js"></script>
+<script id="audioigniter-js-extra">
+var aiStrings = {"play_title":"Play %s","pause_title":"Pause %s","previous":"Previous track","next":"Next track","toggle_list_repeat":"Toggle track listing repeat","toggle_track_repeat":"Toggle track repeat","toggle_list_visible":"Toggle track listing visibility","buy_track":"Buy this track","download_track":"Download this track","volume_up":"Volume Up","volume_down":"Volume Down","open_track_lyrics":"Open track lyrics","set_playback_rate":"Set playback rate","skip_forward":"Skip forward","skip_backward":"Skip backward","shuffle":"Shuffle"};
+var aiStats = {"enabled":"","apiUrl":"https://eswargroups.in/wp-json/audioigniter/v1"};
+//# sourceURL=audioigniter-js-extra
+</script>
+<script data-minify="1" src="https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/audioigniter/player/build/app.js?ver=1759581217" id="audioigniter-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.32.3" id="elementor-webpack-runtime-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.32.3" id="elementor-frontend-modules-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js" data-rocket-defer defer></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.32.3","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"landing-pages":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"import-export-customization":true},"urls":{"assets":"https:\/\/eswargroups.in\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/eswargroups.in\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/eswargroups.in\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"638a867c68"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":698,"title":"Electrical%20and%20Electronics%20in%20Sankarankovil%20-%20Eswargroups","excerpt":"","featuredImage":false}};
+//# sourceURL=elementor-frontend-js-before
+</script>
+<script src="https://eswargroups.in/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.32.3" id="elementor-frontend-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/typed.min.js?ver=4.11.40" id="pa-typed-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/boostify-header-footer-builder/assets/js/nav-menu.min.js?ver=1.4.1" id="boostify_hf_nav_menu-js" data-rocket-defer defer></script>
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://eswargroups.in","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<script src="https://eswargroups.in/wp-content/themes/ignition-nozama/inc/assets/js/ajax-product-search.min.js?ver=1.2.3-1.0" id="ignition-nozama-ajax-product-search-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/ignition/inc/assets/vendor/shyheader/jquery.shyheader.min.js?ver=2.2.0" id="jquery-shyheader-js" data-rocket-defer defer></script>
+<script id="ignition-nozama-front-scripts-js-extra">
+var ignition_nozama_vars = {"ajaxurl":"https://eswargroups.in/wp-admin/admin-ajax.php","search_no_products":"No products match your query."};
+//# sourceURL=ignition-nozama-front-scripts-js-extra
+</script>
+<script src="https://eswargroups.in/wp-content/themes/ignition-nozama/inc/assets/js/scripts.min.js?ver=1.2.3-1.0" id="ignition-nozama-front-scripts-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-js/premium-eq-height.min.js?ver=4.11.40" id="pa-eq-height-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/vendor/react.min.js?ver=18.3.1.1" id="react-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1.1" id="react-dom-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/element.min.js?ver=6a582b0c827fa25df3dd" id="wp-element-js" data-rocket-defer defer></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/hooks.min.js?ver=dd5603f07f9220ed27f1" id="wp-hooks-js"></script>
+<script src="https://eswargroups.in/wp-includes/js/dist/i18n.min.js?ver=c26c3dc7bed366793375" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script data-minify="1" src="https://eswargroups.in/wp-content/cache/min/1/wp-content/plugins/wp-whatsapp-chat/build/frontend/js/index.js?ver=1759581218" id="qlwapp-frontend-js" data-rocket-defer defer></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://eswargroups.in/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://eswargroups.in/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://eswargroups.in/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi_webp/ID/hqdefault.webp" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi_webp/ID/hqdefault.webp'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>
+<script>var rocket_beacon_data = {"ajax_url":"https:\/\/eswargroups.in\/wp-admin\/admin-ajax.php","nonce":"9e15e2b990","url":"https:\/\/eswargroups.in\/about","is_mobile":false,"width_threshold":1600,"height_threshold":700,"delay":500,"debug":null,"status":{"atf":true,"lrc":true,"preload_fonts":true,"preconnect_external_domain":true},"elements":"img, video, picture, p, main, div, li, svg, section, header, span","lrc_threshold":1800,"preload_fonts_exclusions":["api.fontshare.com","cdn.fontshare.com"],"processed_extensions":["woff2","woff","ttf"],"preconnect_external_domain_elements":["link","script","iframe"],"preconnect_external_domain_exclusions":["static.cloudflareinsights.com","rel=\"profile\"","rel=\"preconnect\"","rel=\"dns-prefetch\"","rel=\"icon\""]}</script><script data-name="wpr-wpr-beacon" src='https://eswargroups.in/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js' async></script><script>(()=>{class RocketElementorPreload{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}t(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this.i(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach((t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this.o(t)}catch(t){}}))}o(t){const e=JSON.parse(t.dataset.settings),i=e.m||e.animation_delay||0,n=e[this.animationSettingKeys.find((t=>e[t]))];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let o=setTimeout((()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this.l(t,e)}),i);window.addEventListener("rocket-startLoading",(function(){clearTimeout(o)}))}i(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach((t=>{e.forEach((e=>{i.push(t+e)}))})),i}l(t,e){this.i().forEach((t=>delete e[t])),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorPreload;requestAnimationFrame(t.t.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorPreload.run)})();</script></body>
+</html>
+�O����Aa�6�aTQ���w��ƕ���S�Nwz�����Oj��Ƃ�ĔiiN����Ą/�7u�N3viN��ՙ��7�ą��j�j�u2�Ǖ����ƙ3��i���7Q�O�N���wjv7�z�����iĻ�պ�m��2�O��պu�wQu���j������2������Q����w�ǔ��w��7Ļq�Քa7��z�����3�N�M�a7㱼��mvj3���M������Ɣ��3�������O�6ڰm��3uƉ�qa躻��Qm����q�㱙i3uՙ�jz���������u��ızi��iN�O�ı�w6�v7��6�N��i3u6��j�谄m�㱱���w��qi�ձNi2�ǀ�uNځ���Q�ڄ�u������6Ƥ7�OjNę7wuv�Q3�i�Ǚ�7�i3uwڙƤ��7ǱN���Nm�հ��w�����w��uS�ձ�/��2�Ք���u��OuN�3��Oua7�m�ڙƤ/�jǱ�7���Ɗհqi�づi��w�M7�w3�i7����j�Ղ�2Ǚ�i�3�q���7���i�Ǵz����7�j�i6�ڱ�j��ƻ��q������Ǽ3�37�w�7��O����7Nj3��w�ji76�I��j��3ڥ�6�Հ�uNځ���w3��m�76�T�Q�3���N�Ɣ�7wu�հq�73�m�O�i�ƱO��j���7O�Ǖ�7�u2�Qm�հ��7Ĕ��N�S���N�Q�2���ǀ3���Nmi��j2w��w�N7u�Ĕ�j3���6���mOհuiwı��ı�i�S����3j��Qq�wu2�NmՀձN�O�i7��O��j��3uձƻ���u���z���iƱO�Q7�ձ�հ�NiNq�7����ǁm��3��Ĕ�7�z�ձ�/�ڥ�jǀ��mwQu��3��7Ĕi7�7Owı��3u���j����m�Qq��Ʊ��Ք�i�7w�Qmi��ą��qO7ı6��m��Ļqw�uOi3����wm�Q�Ni�j��ǔ��Q�m�3奙��w�N7uwQq��ıI�Q���ձ2�Q�vw�ڥi���i3uM���iǺ3屺���ջ�հq��3�q7OĔ7Qmi��jzj�7w7�j��N73���Ձ3����Oպ����jv��Ѕ�ƔO躻����3�3jN�2���N7�wQ�3��w�/��ǀwu��Qm��3�6i2��պ�T�6���3uN�Nma7����3j��Հm���a�uO�Ou����I��jǀ�qM��q��N����ձ�ջ�հmiհ�27Q��7�u����3奙�ji7�mO��3zw3�I7Q�ǀ�Պ�Ǵ�հ�2i�7ǀN���w��j��ՙ���Ղ�����zi3�mǂ���NmO�Ĕ�i��w�O��i6���Nm��Ļ���O��w6�i��Ѕ�Qq��2�S�Ʊ�j3�ǱƔ��ƻz�ձ��ƱO�w�������w�z�ձOi�7Հ�u�wıvj����㴔�O�i��7v�N�7Oj��Nm���i�ı��ı�7��Oհm�iı�ǂu�7M���ձi�N�6��j耰����7v73�m�2��7����Ǵz�ƱN�QƱՁ�2հq��N�6w����O���ձi�N��jN�ǀ2�v���3�3�m�㱙�N7��Q3�w3u�������7�wQm��3�6i�uǀǄ��ձ��Ʊ��Nu���u��Qq��ձNՂ�7�Q7O�ձv/����6�O7�ڰwQ�z�Q�N��7ǀN7T�ıv��O7�ja躻S�37N���w㔙i3u���7��ƱI�Qq���u6�w��w�3�7�7��N�6ՙ�v�3мw�u�7�u�Ǚ��w3jƀ�jw��u��Qq��ձI�O���Ċw���iĻOwĔ�i3uTՁ�ijN�27Qu�i6�2���i�37�ǂ�7���O��7����q��j���N��j�w��������O�����i�3j��Ɣa�ƻ���j��3����j��N7���դ73w��wq�������q��3���N�i��uOڰ���3u������㻔�Qm��327O��i�7�w�j�w3ļ�N�O7Ļ�հ���ջ����i�ǔTڙ�m��j�iƱ�i����j��3������7Q7z�Ǽ�/ı2/N�Հ�Ċw�m��ջ��Q�w��uM�3���N727Qq���u�����i3j2���躴��Ĕ�i�uO/N��73���Nm�iջ҄Q���Q����Ʊ/�м�Ʊaհ����j����m�ƱO�N7��Qmv/�ڥ�O�Հ�u2հm�հ�w7���պ�i�w���3uN�N�a7O�����/�wm�O����uzw�u��Ʊq/N�O�QqM�Q��i����j��N�M���m�ձ���j���ځ�QuN���Ǳ2�i7㴉��դw�ڥj�j���մ�Nm��N�����i�z��3�����q�w���N�����zi3�ƀ�ja7����Qmijı��Qq���6�Nm�Ձ�m��3�i3u����i�3���Qq老����mz�3jNǂ�i�N7ՙ�j��37��Q�ǀ�6w�mz�Q�2i2����u��6���Q7N��j�躻���7v�N��7���Q�I���z��ļi�Д7�u��ձv�Ʊ��2ı��uS�ձ�/�����j��2�z��7N���m�2�����uw��viƱq�2�Հı6հqzi3���j��O�M��m�/��2��ja7��2�Nmz�3jq��Ĕ�u�wı��Ʊq/2j�7��N��jz�N�m��7�������j�/ƻ�i�j��Q����qij3�N�2���N7O��ǀ3j�i2jw��u��Ǵz�Q��i���պ�T��jv7��N�N�O7�j��Q3��Q����j������jz��ąi�����Ċհ3��w3����Հ�7��w�v�ǻNw��ǀ����ıii3j2����2�O��i��jOjNƔ��mOw3���N����j��M7TՁ���3j��Nq��Ʊiհq��3w���jO�2�O���S�ƱI7�u�7Q7�հm�������uO�Q����Ɖ7����Q���ƻ��Q36��ռiMjO�w����դ�ՄmwQ�ǀ㱥ڂu��Qƅ��i��u��3jv73jq���O7wu7�Qm��N�m�O�a7Q7���i��ļ�Q��7�u���7��Ʊ���7��M���ձ�j����Ʊǀ�A6�QuN�w��ǂ7�7��O���zwձO�j��ĻO�㔉�Q�Oi���i3�M��m�/�u�ƻ�7Ʊ�ՙ��i3w�肻�7Q7iڙ����ڤǂ���Ļ��NmǙı҄����N��ڙ����3ǱNu��ǔ���j6��7�ǂ�i7O7���w3/�ڥ/NƔ�Q7Nw�uiհƅ�Q��i�u��w�����qj��a7O�M��j��3���O�i7Q��w��i��7���j�7�Ĵ�wj����Հ����Q3v73��iƱ��O���OuNi�7�w�Д7㴉�Q����mw�Д�wĊհ�v��jN�ıǀN�������3jq7ı���u��Ʊi���q��jOi3uO�Ĕz���ձ�j�73�����w����Ou��O�Tw�3���Ѕ��ja7�u���m�հ�N�Ĕ�7���w7N����QƱ��z����հƅ�Q��i�ǱwjN��7�i���躻v�3��Ձ�N�2����7Iw�w3i�ռ���w7�Պհ��i�3��w����u����v���ja7�u��QuN�3�m��Ĕ7Q�z��mv��j�w�j���Պ���i3�ǂ�w��uM�w�i�N�Ɖǔ�պ�O�Nmii3j���jO���i�Qm��3u������㱁wQm�հ�6��u��N���ձ�/�u�������u���qi�ձ�Ղ�w��ę�Qm���7�iN�Հ�uOհ���3����7�i3uv��jN7����ja�ƴ����N�m�O�i�u��Qq��3�w7�j���umw�u�i�3�����O��ՙ��/�ռ��uǀ3�z���i�����w�O7��w���Ʊ��M�a���M��ռwQ��Ĕ�i3���w����Ѕ��j��O�iհqiw��O���7�2�O��7����I7�j������jNw3jN�ı��M�����i�3j�wQm�73����qij3�m�O�����O��������Q����z�wQq��ձOw�ji�6�Tw��N�3u��w��Ǻ��Q�m��wm7O����u��Q3���ąǂj�7ı6�Ǵ��w3��2���Ļ2�Nmvj�Ƽ�Ɣ��Ļ�������7NՂ�a7��O���zwձI�QƔ�w���Qq�հ��Ĕ���uM�ı��3jq7Qqa��u��ǁ3�3�q������i���v�3�2/N�O73��wQm��Q���Mj��N�mw6�v73Ѕ�Ɣa7�Ք�Qq���7N�ƱO�w�I�Qmv/Մm�2Д��Ċw�m��Ʊ��Ĕ�7�u2w�Ɖ��uN�N�a7����3j�w3ƅ��j��Nm�wĔ���7�w�jO7Q7�հ3�Ձ3���7��O�����mj�ƅi�u�iM�w��uNi�7�ǂ7a7㴉��jz�ı���j��3���Ք��ջqw�ı�N��խ���3j�jNm��2���Nmi���Nǂ�a/�u��Ĕ��Ʊq/N���N7��w���ı҄��Oպ��խ��/���wQ��i6����7v�3�Nǂ�O�N7ǙǼm�Ʊq/Nqǀ�7���m��Q��i�mǀ�u���wm�3Ѕ���ai�uiհm����m�O���N7O��mi���w�Ļ�7Qm�w�m�iQ���O�w��u��Nmi��N7�j��պ����mwQ�Ǚ��O�ǔ��ıvj3�I��j��Ļ6հmz�3j2w��w�M7M��mi�N�2�ǔ��Ǥ�����ձq���7պ���㱤��u�ՙ��i6�O��3�w3��i����N�M�ձ7/�u�w�7a7�uw��3�j3��ǂ�i7��wQm��3ڥ�6Ք��u�հu��Q�m�m�7M�T�3�N�ձ��N���O�S�3j�73�q��j���u���j��ƱI�Q�O7Q7ڱwj�iw3��Ք�i����ձv7��҄�u��O�6��j��Q�Ow��7�N7O����3jOjN����u6հ���Q�҄�jw�6�Sw���jN�N�Nq��Ʊ����ii3wm��jO�2�O�Ǵzi��w7��7㴱���հ�Oi2u��M��w���7��N��Ք�2�6�Q�mw3���Oĉՙ�z�����3�q���O��uN�Ĕ��Ʊ����i7����6�vjƻ�w�7��O�N�Q3��3�OwO�w�N���Qq���ļ��7�7Ļ��wՉպ3��2�Oպ�Sխ�v�����j�3���Qm�7��q��jw�ƱO��q�j3��w�j���OwQ���ǻ���7�պ�M�ձi�����Nm�2��������Ƽ�����N���Qm��3�/����2�N���w����O���NЊ�w��j�3�wQ��73���Q3�j3jN�����N7O��q����q/�Д��u��Q���3�6i2�wi3u��6�v���q7����O���Q3����m��jOi���w��i���I��j���uڙĔ��N�N�����M�����m7��N�Q���2�������3�m���i7�OՁ�vwƱq/����Ċ�Քzw����O�wպu�ځ���3u2�Ք��O�����zi3j�ǂ���N�Ow�u�j3�w��q�i6��wQm�iǻ�����i3�Ǳw���3�����a7�����m��3j���ՙiĻ��ıi�Ʊ2��jՀ�u�wǁ��ı��w7���u�Ձj�73u����a躻i�Qqi���mwO�O�N7w�Qqv�ձI���w7�u�հm��3��Й���N���Nmi�ջ��Ɣa7�uw�QuN�3�m���a7�uuw��z�ƱN�Q���mOځ��w��qw�7w�M7�w���/w3ձ��a�����m�73ڥ���7�N��w�դ���I7Q�OՂ�2��3�i�3ڄ�uǀǄ���j7/�Յ�Ɣ��Ļ���qՀ��m�2��պ�w�Q3��3j�w��O7�u�ځ�����6�Q��i�Ɗw�Ɖ�Q�N����Ǻ��հmi�Մm�Ɣwi�7O��j����I�Q�w��u6հm�w�3Հ���7M���ձv��N��ua���6���iw3���2��7�u���Ђ/�j�i2jǀ�u6հ��wı���j�i��w�ijN��j�j��O���ǁm73wm���7i�mO���ii��I7Q��i6�Oհmii�ڥi����M�T�Q�m73j��Nu��ƻS��mi7��N��j�7M7z�Qq���w��w����z�wQm�հ�m�2ui7�7�w3��7�O���ЀQ�6�Qq����ǙO�a7�u�Ձw3���w��7��ƻ��㱉iQ�2/Ʊ��O7M�㱱j3j���j耰�w�QuN��7�7��a7Q�z�Ǽ��Ʊ�w�qՀwĊհ���ǻ��O�ǀƱT���ij�3wwQq�/��հqi�3�O肻��������i�wm�Qƙ73���Nmiiձڄ���7M�I�ı�/ջ����O7�����j��w�mՂ7��N7w�Qmv��uƱ2�ǀ�7Nw3��հ��wOj�պuN�w�����NwĔ耰����7�i3wm��j��Ʊw��mv���q��7��N7��Q3��ƻ���7ǀ�76�ձi�3jI��j�7wځ�Q�m�Q�q��ji7��u��j�/ձqj�Й��Պհ����j儂���O�MՁ���N��jN��Ղ���Nmzi��ՀO���2��ڙƤ��ڥ��j��N76w�m�iN�m�3�պ���6�ijƻ����aհ�����z�3j�ǂ��/㱅�ձ���ڥ/N���w���w�iհ�w7�7�i3uOڰm���u2j�ja7ǕM�3j���3O7���Qm���mi��7���q�7Qmڙձv�ƻ���uOi�76ՙ�i�Q���j��w����7v���mՂ����uz��mvwƱO�2�Հ�7O��m��Q���Ǖw�M7Mw�m��3Յ��j��2�����73jNǂ��7���w��i��uN�������㱉�Q�Oi���i�z���j�/���i�Ք�Q�w��7v�N�NՂД7w�O�Qmi/��qj��w�wu���mzՁ3I7Oj���Պڰ3v7�7��N��Ղ���Q��/ƀ��O�wi��zwQ3�3�q/�u�7Q7ڙ�7�i�3���7�i3��ՙ�v�N�Ɖձ�i6հ�OuN�ǀmiMu�7�ę�w���ձw7Q���2w�q�iĻ��Ĕ�i3uM��ƅ/����7�պ�Oխ���w���j�7�uOՂu���u���jǀ�73�N3��N�6��u��O7Ǚ�j��3���ĻO7�����36���Nǂ7�7O7z�����ıq��qǀwu��Ք��Ʊqw���/㱙�6��jN�N�Q����z6�Qqi���m7O�O�N7O��jz��ռՙ�a�ձ������3����ձ�Ʊ�Ձ��j��Ʊ���հ���QuN�QռՂ�7�2��wQ���ձI7Qƙ��6հ���N�2w�б�N�ұw�i����7�i6����mz�3w��㔔7�ui��դjı�ǂ����N�N3��ı���uOi3��w���/�j�wıa�����u�w3�N�OjOiM����q�7�ڥ/N�w�w���Qu�հ�w7���7��T�����Q�N�Qę7wu��3�zj3�m��jO��u�w��v��7O�6ƙ7ı��w����3�Ǚ�����T�ձ�/�Յ/�j��2��Ǚ��i�м�7�mOڙ����ڥj�ja�wմwQmi�ı��Ĕ�պ���ձijN�27�7���O���6��ڥ������Ow�uN/ıw�O���㱥ځ�ziջ�Oi3�2խ��/�7��ıa7��S��7����N��ji�N7��ձ���ڥ/Nq���u���v�Q��i��w��u���Ƥ��u2���a躻��3j�w3�m��jOi�uO�Q���3��Ղjw�O�Oհ����ڤ�76�6Ձ�v�Q�ƀ�ja7�u��3�i�Q��Ղ�w�w�ww�7��3j�w���Q7O�Q�NwQ������i3uO�ı��3Յ��j�iM�2�Nm�i3j��w��7�O��uN����6��i6�O�wjzi����ı��ƻ�ڙƻ/�7�i�j��Q���ǁmw3�mǂ7��N7��Qm�/��q�wj�7�ڰwQm��Q�2i2����uTՁjN73���N��Ղ�S�37v�ƱqwO�O��uIw��z���qj�q�7�u���7��w3�ǂuՀǔS��j�/�j���u�7�uO���iհмi7Q7uwĔ�/�j��Q�w��մwĔziw��/Ɣw�6խw����uƉ����O�mՙ�����Ǳ�j��Q7O�Ĕzi�u2�M�ǀ�u��w��i�jN�ı�7Q��w6�m73��iN��7��S����73��ǂ7�7Q7��㱤/�ڥjN����uOځ����3��2�i�M�Mw������i���Ǻ���Q��j���wO��i���ڙ�����O/2jO7Qm��MuN�3����j��ƻ2�Ǽm�Nպ�Q��Ղ�6��qi�м�2�7�N7��Q3z/ձq�q耭�6հ�viƻqw���O7Mw3�i�3Յ�����Q�����3�3j27����N�O��7�7�ڤ�Qq���7����ǙQ�N�i�����jN73����O7�����j���7N�O�O�w�I�Ք���u���jՀ�u�w�q�հ��w��w��uOڰ�m��ռ�Q��/ı�հm��Ѕ�wj��㴔wĔ��3ąՂj��QqMհ���ƻ����Oi3�O���N��jqi�u�7�uO�ıi��7Ǚ�7a7�O���z���m��7Հ�3�wQq��N�N��бպ���3�ij�3wwQm��2�����脰�N�����N�O�Ǵ�3�q�M����u�w�m�Ձ���2uOi3��w��7�ǱƔa�M�w����7�3Nǂ�O�O��wQq���j��Qq�Ձu6հm��Q�2w�����u�ڰmijƻq/N��wui���w3�mǂ7�i�����v���w7�j���u�wQm��N�Nǂ�i7�u��ձ��N�ƀՔO躻��Ouv�Q��肻O�ƱuՁ�vwƱqa��mOհ���づi����O�m��m����ı��2�2Ǚ�iw3�q�����ǔ����i�3�I7Qq�Ղ�2�w��i�������N�M�wj�/�uƱ�7a7M���ǁ3�3�mw�jO�w�i�Qmv/�ڥ��q�i6�ǙĔ�Ձ3I7�u�պu2�Qmijƻ����a躻��3j��3���O����uzw����Ʊ�i����7O�Ǽ�i�3�ՂuOi��T�w��/�ռ��ja�N����7N�Q��7��i7Q�u�ı���jw�Q���mOw�mz�Q��i�jw��uM�w��7�uƱ�7�iM����j6��ڥ��Ք7ƻO�Ĕ����O�M�ǀwu�������6i�jO�Ļ2w6Ƽհ�Ni����Nmm��36/��N�㔉�O7ՙw7N��u��Q��ՙ�N��7i�ı��Oj�i�72�Qm�7Q�N������3ՙ����q����Ʊ��Ou�w�j��Mj���m�ڙ��wN��7O��7���w�л�qw�j�/����a�u����
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1768816283 -->
